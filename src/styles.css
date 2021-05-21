@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+nav {
+    z-index: 999999999999999999999999999999999999999999;
+}
+
+nav::after {
+    content: "";
+    background-color: whitesmoke;
+    height: 0.5px;
+    width: 100%;
+    position: absolute;
+    top: 73px;
+    left: 0;
+}
+
+@media screen and (max-width:992px) {
+    nav::after {
+        height: 0;
+    }
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 0px 13px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f75a5a;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        background-color: white;
+        width: 100%;
+        margin-left: 0;
+        z-index: 99999999999999999999999999999;
+    }
+    .navbar-nav .nav-item .nav-link {
+        color: black;
+        font-size: 16px;
+        padding: 10px 13px;
+        text-align: left;
+    }
+}
